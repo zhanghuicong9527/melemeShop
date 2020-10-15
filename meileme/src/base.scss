@@ -1,0 +1,16 @@
+$navColor: rgb(248, 248, 14);
+@mixin arrow($w: 10px , $c: #000 , $dir: top) {
+    font-size: 0;
+    width: 0;
+    border:$w solid transparent;
+    border-#{$dir}-color:$c;
+    
+}
+
+@mixin  clearfix() {
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
